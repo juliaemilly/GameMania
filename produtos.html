@@ -2,6 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tela principal</title>
     <link rel="stylesheet" href="style3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,7 +19,7 @@
                 <a href="produtos.html"> Game Mania </a>
             </div>
             <nav>
-                <ul>
+                <ul id="MenuItems">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Sobre</a></li>
                     <li><a href="produtos.html">Produtos</a></li>
@@ -27,6 +28,7 @@
                 </ul>
             </nav>
             <img src="imagens/cart.png" width="30px" height="30px">
+            <img src="images2/menu.png" class="menu-icon" onclick="menutoggle()">
         </div> 
          <div class="row">
              <div class="col-2">
@@ -132,17 +134,79 @@
                 </div>
         </div>
 <!-----oferta----->
-<div class="oferta">
+<div class="offer">
     <div class="row">
         <div class="col-2">
-            <img src="imagens/cadeira1.jpg" class="oferta-img" >
+            <img src="imagens/cadeira2.png" class="offer-img" >
         </div>
         <div class="col-2">
             <p>disponível exclusivamente na loja</p>
             <h1>cadeira gamer</h1>
              <small>Dessa forma, a cadeira pode oferecer alto conforto, mesmo por longos períodos de uso. DURABILIDADE Feita com materiais de alta qualidade, a cadeira oferece durabilidade reforçada, suportando ESPECIFICAÇÕES Modelo: Redragon King of War Preta/Vermelha</small>
+             <a href="" class="btn">compre agora &#8594;</a>
+            </div>
+    </div>
+</div>
+<!-----rodapé------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>baixe nosso aplicativo</h3>
+                <p>baixe nosso aplicativo para celular, android e ios</p>
+                <div class="app-logo">
+                    <img src="images2/play-store.png">
+                    <img src="images2/app-store.png">
+                </div>
+            </div>
+                <div class="footer-col-2">
+                     <img src="imagens/imagem2.png">
+                    <p>A nossa missão é inspirar e valorizar a paixão pela tecnologia, jogos, conteúdos,
+                        entretenimento e inovação, causando uma emoção inédita, criando experiências
+                        e prazeres.</p>     
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>cupoms</li>
+                        <li>blog post</li>
+                        <li>política de devolução</li>
+                        <li>juntar-se ao afiliado</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Intagram</li>
+                        <li>twitter</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">direito autoral 2022 - Julia Emily Leonardo Barbosa</p>
         </div>
     </div>
 </div>
+<!-----js for toggle menu----->
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+        {
+            MenuItems.style.maxHeight = "0px";
+        }
+    }
+</script>
+
+
 </body>
 </html>
