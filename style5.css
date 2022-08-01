@@ -1,9 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
 }
 .logo span {
     color: #e22424;
@@ -55,59 +53,96 @@ nav li a:hover{
     justify-content: center;
     text-align: center;
 }
-.texto .titulo{
-    color: white;
-    font-size: 60px;
-    font-weight: 600;
+body{
+    font-family: 'poppims', sans-serif;
 }
-.texto .sub_titulo{
-    color: white;
-    font-size: 58px;
-    font-weight: 600;
+.small-container{
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    padding-left: 20px;
 }
-.texto .botoes{
-    margin-top: 30px;
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-.texto .botoes button{
-    height: 55px;
-    width: 170px;
-    border-radius: 5px;
-    border: 0;
-    margin: 0 10px;
-    font-size: 20px;
-    font-weight: 500;
-    padding: 0 10px;
+.single-product{
+    margin-top: 80px;
+}
+.small-img-row{
+    display: flex;
+    justify-content: space-around;
+}
+.col-2 img{
+    max-width: 100%;
+    padding: 50px 0;
+}
+.small-img-col{
+    flex-basis: 24%;
     cursor: pointer;
+}
+.single-product .col-2 img{
+    padding: 0;
+}
+.single-product .col-2{
+    padding: 20px;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+}
+.col-2 h1{
+    font-size: 50px;
+    line-height: 60px;
+    margin: 25px 0;
+}
+.single-product select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.single-product h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.single-product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
     outline: none;
-    transition: 0.3s;
 }
-.texto .botoes button.n-overlay{
-    color: white;
-    background: none;
-    border: 2px solid whitesmoke;
+a{
+    text-decoration: none;
+    color: #555;
 }
-.texto .botoes button.n-overlay:hover{
-    color: black;
-    background-color: white;
+.single-product .fa{
+    color: #d62912;
+    margin-left: 10px;
 }
-.texto .botoes button.overlay{
-    background: white;
-    color: black;
-    animation: vibrar 0.5s ease-in-out infinite both;
+p{
+    color: #555;
 }
-@keyframes vibrar {
-    0%{
-        transform: scale(1);
-    }
-    50%{
-        transform: scale(1.1);
-    }
-    100%{
-        transform: scale(1);
-    }
+.btn{
+    display: inline-block;
+    background: #d62912;
+    color:#fff;
+    padding: 8px 30px;
+    margin: 30px 0;
+    border-radius: 30px;
+    transition: backgroud 0.5s;
 }
-
-/*--------rodapé---------*/
+.btn:hover{
+    background: #24a03f;
+}
+/*-----------rodapé---------*/
   
 .footer{
     background: #000;

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="style5.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <title>Detalhe de produto</title>
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="navbar">
+                </div>
+                <nav>
+                    <ul id="MenuItems">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="#">Sobre</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="login.html">Login</a></li>
+                        <li><a href="formulario de contato.html">Contato</a></li>   
+                    </ul>
+                </nav>
+    <div class="small-container single-product">
+        <div class="row">
+            <div class="col-2">
+                <img src="imagens/cadeira2.png" width="100%" id="productimg">
+                <div class="small-img-row">
+                    <div class="small-img-col">
+                        <img src="produtos/cadeira1.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="produtos/cadeira2.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="produtos/cadeira3.jpg" width="100%" class="small-img">
+                    </div>
+                    <div class="small-img-col">
+                        <img src="produtos/cadeira4.jpg" width="100%" class="small-img">
+                    </div>
+                </div>
+            </div>
+            <div class="col-2">
+                <p>Cadeira gamer</p>
+                <h1>cadeira Alpha</h1>
+                <h4>R$1.200,00</h4>
+                <select>
+                    <option>selecione a cor</option>
+                    <option>preto</option>
+                    <option>branco</option>
+                    <option>Vermelha</option>
+                    <option>azul</option>
+                </select>
+                <input type="number" value="1">
+                <a href="" class="btn">adicionar no carrinho</a>
+                <h3>detalhe de produto<i class="fas fa-indent"></i></h3>
+                <br>
+                <p> Cadeira Gamer Alpha Gamer Vega - Preto e Vermelho   As cadeiras gaming Alpha Gamer Vega incluem duas almofadas: para apoio lombar e também para apoio
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var productImg = document.getElementById("ProductImg");
+        var smallImg = Document.getElementsByClassName("small-img");
+    
+        Smallimg[0].onclick = function()
+        {
+            productImg.src = smallImg[0].src;
+        }
+        Smallimg[1].onclick = function()
+        {
+            productImg.src = smallImg[1].src;
+        }
+        Smallimg[2].onclick = function()
+        {
+            productImg.src = smallImg[2].src;
+        }
+        Smallimg[3].onclick = function()
+        {
+            productImg.src = smallImg[3].src;
+        }
+        Smallimg[4].onclick = function()
+        {
+            productImg.src = smallImg[4].src;
+        }
+    </script>
+
+    <!-----rodapé------->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>baixe nosso aplicativo</h3>
+                <p>baixe nosso aplicativo para celular, android e ios</p>
+                <div class="app-logo">
+                    <img src="images2/play-store.png">
+                    <img src="images2/app-store.png">
+                </div>
+            </div>
+                <div class="footer-col-2">
+                     <img src="imagens/imagem2.png">
+                    <p>A nossa missão é inspirar e valorizar a paixão pela tecnologia, jogos, conteúdos,
+                        entretenimento e inovação, causando uma emoção inédita, criando experiências
+                        e prazeres.</p>     
+                </div>
+                <div class="footer-col-3">
+                    <h3>Links Úteis</h3>
+                    <ul>
+                        <li>cupoms</li>
+                        <li>blog post</li>
+                        <li>política de devolução</li>
+                        <li>juntar-se ao afiliado</li>
+                    </ul>
+                </div>
+                <div class="footer-col-4">
+                    <h3>Siga-nos</h3>
+                    <ul>
+                        <li>Facebook</li>
+                        <li>Intagram</li>
+                        <li>twitter</li>
+                        <li>youtube</li>
+                    </ul>
+                </div>
+            </div>
+            <hr>
+            <p class="copyright">direito autoral 2022 - Julia Emily Leonardo Barbosa</p>
+        </div>
+    </div>
+</div>
+<!-------parte de cima------->
+<div class="logo">
+    <a href="index.html"> Game <span>Mania</span> </a>
+</div>
+</body>
+
+</html>
