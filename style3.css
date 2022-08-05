@@ -7,7 +7,9 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-
+.logo span {
+    color: #e22424;
+}
 .navbar{
     display: flex;
     align-items: center;
@@ -59,7 +61,7 @@ p{
 }
 .btn{
     display: inline-block;
-    background: #10e434e8;
+    background: #db1912e8;
     color: aliceblue;
     padding: 8px 30px;
     margin: 30px 0;
@@ -68,7 +70,7 @@ p{
 }
 
 .btn:hover{
-    background: #563434;
+    background: #2ea32a;
 }
 .header{
     background: radial-gradient( white, #0b7fc2);
