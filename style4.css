@@ -3,11 +3,16 @@
 }
 
 body {
-    background: linear-gradient(120deg,black, #8e44ad);
+    background-image: url(imagens/pôr\ do\ sol\ \).jpg);
+    background-position: center;
     color: #fff;
-    line-height: 1.6;
-    font-family: 'Quicksand', sans-serif;
-    padding: 0 1.5em;
+    background-repeat: no-repeat;
+    background-size: cover;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 20px;
+     min-height: 100vh;
 }
 
 .container {
